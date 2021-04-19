@@ -2023,7 +2023,7 @@ vary@^1.1.2:
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
 vite@^1.0.0-rc.1:
-  version "1.0.0-rc.3"
+  version "1.0.0-rc.13"
   resolved "https://registry.npm.taobao.org/vite/download/vite-1.0.0-rc.13.tgz?cache=0&sync_timestamp=1617153043581&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvite%2Fdownload%2Fvite-1.0.0-rc.13.tgz#0e0b3b6138998a1d0c02459908a6c4fb2f294727"
   integrity sha1-Dgs7YTiZih0MAkWZCKbE+y8pRyc=
   dependencies:
@@ -2082,6 +2082,11 @@ vite@^1.0.0-rc.1:
     source-map "^0.7.3"
     vue "^3.0.3"
     ws "^7.3.1"
+
+vue-router@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/vue-router/download/vue-router-4.0.1.tgz#309240e50524b1e7d4e82e27f0a0fa25fe3d1d71"
+  integrity sha1-MJJA5QUksefU6C4n8KD6Jf49HXE=
 
 vue@^3.0.0-rc.1, vue@^3.0.3:
   version "3.0.11"

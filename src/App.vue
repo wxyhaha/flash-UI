@@ -1,15 +1,15 @@
 <template>
-  <div>hi</div>
-  <Joel/>
+  <div>导航栏 |
+    <router-link to="/">Joel</router-link> |
+    <router-link to="/2">Joel2</router-link>
+  </div>
+  <hr/>
+  <router-view/>
 </template>
 
 <script>
-import Joel from './components/Joel.vue'
 
 export default {
   name: 'App',
-  components: {
-    Joel
-  }
 }
 </script>
