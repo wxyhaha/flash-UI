@@ -1,5 +1,5 @@
 <template>
-  <button class="flash-button" :class="classes">
+  <button class="flash-button" :class="classes" :disabled="disabled">
     <slot/>
   </button>
 </template>
@@ -21,6 +21,10 @@ export default {
       type: String,
       default: 'normal',
     },
+    disabled: {
+      type: Boolean,
+      default: false
+    }
   },
   setup(props) {
     const {theme, size, level} = props;
@@ -43,6 +47,7 @@ $color: #333;
 $blue: #40a9ff;
 $radius: 4px;
 $red: red;
+$grey: grey;
 .flash-button {
   box-sizing: border-box;
   height: $h;
@@ -162,6 +167,24 @@ $red: red;
       &:focus {
         color: darken($red, 10%);
       }
+    }
+  }
+
+  &.flash-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+
+  &.flash-theme-link, &.flash-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
     }
   }
 }
