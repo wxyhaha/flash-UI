@@ -1,8 +1,8 @@
 <template>
   <div>
-    Button demo
+    Button 示例
   </div>
-  <h1>demo 1</h1>
+  <h1>示例 1</h1>
   <div>
     <Button>hello</Button>
     <Button theme="button">hello</Button>
