@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="toggle" :class="{checked:value}">
+    <button class="flash-switch" @click="toggle" :class="{'flash-checked':value}">
       <span></span>
     </button>
   </div>
@@ -20,10 +20,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-button {
+.flash-switch {
   height: $h;
   width: $h*2;
   border: none;
@@ -42,7 +42,7 @@ button {
     transition: left 250ms;
   }
 
-  &.checked {
+  &.flash-checked {
     background: deepskyblue;
 
     > span {
@@ -60,7 +60,7 @@ button {
     }
   }
 
-  &.checked:active {
+  &.flash-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
