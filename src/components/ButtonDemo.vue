@@ -4,10 +4,26 @@
   </div>
   <h1>示例 1</h1>
   <div>
-    <Button>hello</Button>
-    <Button theme="button">hello</Button>
-    <Button theme="link">hello</Button>
-    <Button theme="text">hello</Button>
+    <Button>你好</Button>
+    <Button theme="button">你好</Button>
+    <Button theme="link">你好</Button>
+    <Button theme="text">你好</Button>
+  </div>
+  <h1>示例 2</h1>
+  <div>
+    <Button size="big">大大</Button>
+    <Button>普通</Button>
+    <Button size="small">小小</Button>
+  </div>
+  <div>
+    <Button theme="link" size="big">大大</Button>
+    <Button theme="link">普通</Button>
+    <Button theme="link" size="small">小小</Button>
+  </div>
+  <div>
+    <Button theme="text" size="big">大大</Button>
+    <Button theme="text">普通</Button>
+    <Button theme="text" size="small">小小</Button>
   </div>
 </template>
 
