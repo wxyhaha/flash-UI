@@ -1,6 +1,6 @@
 <template>
   <template v-if="visible">
-    <Teleport to="body">
+    <teleport to="body">
       <div class="flash-dialog-overlay" @click="onClickOverlay"></div>
       <div class="flash-dialog-wrapper">
         <div class="flash-dialog">
@@ -17,7 +17,7 @@
           </footer>
         </div>
       </div>
-    </Teleport>
+    </teleport>
   </template>
 </template>
 
