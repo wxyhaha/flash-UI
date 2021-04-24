@@ -11,7 +11,7 @@
       <div class="flash-tabs-nav-indicator" ref="indicator"></div>
     </div>
     <div class="flash-tabs-content">
-      <component class="flash-tabs-content-item" :is="current" :key="current.props.title"/>
+      <component :is="current" :key="current.props.title"/>
     </div>
   </div>
 </template>
