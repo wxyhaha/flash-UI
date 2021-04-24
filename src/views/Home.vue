@@ -37,6 +37,7 @@ export default {
 $blue: #1e40c8;
 .topNavAndBanner {
   background: linear-gradient(145deg, rgba(242, 246, 252, 1) 0%, rgba(221, 231, 246, 1) 100%);
+  clip-path: ellipse(80% 60% at 50% 40%);
 }
 
 .features {
