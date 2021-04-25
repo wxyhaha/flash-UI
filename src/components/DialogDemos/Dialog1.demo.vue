@@ -3,8 +3,8 @@
 </demo>
 <template>
   <div>
-    <Button @click="toggle">toggle</Button>
-    <Dialog v-model:visible="x" :ok="f1" :cancel="f2">
+    <Button @click="toggle">打开对话框</Button>
+    <Dialog v-model:visible="isVisible" :ok="okFunc" :cancel="cancelFunc">
       <template v-slot:content>
         <div>你好</div>
         <div>hello</div>
@@ -23,20 +23,19 @@ import {ref} from "vue";
 export default {
   components: {Dialog, Button},
   setup() {
-    const x = ref(false);
+    const isVisible = ref(false);
     const toggle = () => {
-      x.value = !x.value;
+      isVisible.value = !isVisible.value;
     };
-    const f1 = () => {
-      return true;
+    const okFunc = () => {
     };
-    const f2 = () => {
+    const cancelFunc = () => {
     };
     return {
-      x,
+      isVisible,
       toggle,
-      f1,
-      f2
+      okFunc,
+      cancelFunc
     }
   }
 }
