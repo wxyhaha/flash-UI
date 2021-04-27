@@ -6,7 +6,7 @@ export const openDialog = (options) => {
   const div = document.createElement('div');
   document.body.appendChild(div);
   const close = () => {
-    app.unmount();
+    app.unmount(div);
     div.remove();
   };
   const app = createApp({
